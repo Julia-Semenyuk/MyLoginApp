@@ -26,10 +26,9 @@ struct Person {
     let photo: String
     let hobby: Rest
     let movie: FavoriteMovie
-//favoriteMovie: Movie
     
-    var fullname: String {
-        "\(name)\(surname)"
+    var fullName: String {
+        "\(name) \(surname)"
     }
     static func getPerson() -> Person {
         Person(
@@ -57,19 +56,19 @@ struct FavoriteMovie {
     let genre: String
     
     var myFavoriteMovie: String {
-        "\(title)\(genre)"
+        "\(title) \(genre)"
     }
     
     static func getMovie() -> FavoriteMovie {
-        FavoriteMovie(title: .one, genre: "Очень нравится")
+        FavoriteMovie(title: .one, genre: "Фантастика")
     }
 }
 
 enum Hobby: String {
-    case one = "swimming"
-    case two = "drawing"
-    case three = "reading"
-    case four = "cooking"
+    case one = "Плавание"
+    case two = "Рисование"
+    case three = "Чтение"
+    case four = "Готовить"
 }
 
 enum Movie: String {
