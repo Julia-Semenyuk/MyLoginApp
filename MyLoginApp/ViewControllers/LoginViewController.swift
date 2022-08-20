@@ -7,13 +7,14 @@
 
 import UIKit
 
- class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
     private let user = User.getUserData()
-    
+     
+    //MARK: - Override function
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else  { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
@@ -35,6 +36,7 @@ import UIKit
             view.endEditing(true)
         }
         
+     //MARK: - @IBAction
         @IBAction func logInButtonPressed() {
             guard userNameTF.text == user.login, passwordTF.text == user.password else {
                 showAlert(
@@ -46,6 +48,14 @@ import UIKit
             }
             performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         }
+     
+     @IBAction func forgotUserNameButton() {
+         showAlert(title: "Oops!", message: "Your name is \(user.login) 😉")
+     }
+     
+     @IBAction func forgotPasswordButton() {
+         showAlert(title: "Oops!", message: "Your password is \(user.password) 😉 ")
+     }
      
      
      @IBAction func unwindSegue(_ segue: UIStoryboardSegue ) {
