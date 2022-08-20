@@ -48,7 +48,7 @@ import UIKit
         }
      
      
-     @IBAction func unwindSegue(segue: UIStoryboardSegue ) {
+     @IBAction func unwindSegue(_ segue: UIStoryboardSegue ) {
          userNameTF.text = ""
          passwordTF.text = ""
      }
@@ -59,11 +59,12 @@ import UIKit
             let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
                 textField?.text = ""
             }
-            
             alert.addAction(okAction)
             present(alert, animated: true)
         }
-    }
+ }
+
+
      
  
 
