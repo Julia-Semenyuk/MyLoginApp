@@ -23,14 +23,13 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoImage.image = UIImage(named: user.person.photo)
+        view.addVerticalGradientLayuer()
+        photoImage.image = UIImage(named: "j")
         title = user.person.fullName
         nameLabel.text = user.person.name
         surnameLabel.text = user.person.surname
         hobbyLabel.text = user.person.hobby.title.rawValue
-        favoriteMovieLabel.text = user.person.movie.myFavoriteMovie
-        //myFavoriteMovie
-        //movie.title.rawValue
+        favoriteMovieLabel.text = user.person.movie.title.rawValue
 
      
     }

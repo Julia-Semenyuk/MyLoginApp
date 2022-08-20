@@ -46,6 +46,13 @@ import UIKit
             }
             performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         }
+     
+     
+     @IBAction func unwindSegue(segue: UIStoryboardSegue ) {
+         userNameTF.text = ""
+         passwordTF.text = ""
+     }
+     
         //MARK: - UIAlertController
         private func showAlert(title: String, message: String, textField: UITextField? = nil) {
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

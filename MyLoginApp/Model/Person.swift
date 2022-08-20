@@ -55,10 +55,6 @@ struct FavoriteMovie {
     let title: Movie
     let genre: String
     
-    var myFavoriteMovie: String {
-        "\(title) \(genre)"
-    }
-    
     static func getMovie() -> FavoriteMovie {
         FavoriteMovie(title: .one, genre: "Фантастика")
     }

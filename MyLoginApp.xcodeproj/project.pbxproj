@@ -17,6 +17,7 @@
 		A2249AF028AF9601000AA6D9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249AEF28AF9600000AA6D9 /* WelcomeViewController.swift */; };
 		A2249AF228AFCCDB000AA6D9 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249AF128AFCCDB000AA6D9 /* UserViewController.swift */; };
 		A2249AF428AFCD1B000AA6D9 /* AdditionalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249AF328AFCD1B000AA6D9 /* AdditionalInformationViewController.swift */; };
+		A2249AF628B0ED54000AA6D9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249AF528B0ED54000AA6D9 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A2249AEF28AF9600000AA6D9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		A2249AF128AFCCDB000AA6D9 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		A2249AF328AFCD1B000AA6D9 /* AdditionalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInformationViewController.swift; sourceTree = "<group>"; };
+		A2249AF528B0ED54000AA6D9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				A2249AEE28AF5A8E000AA6D9 /* Storyboards */,
 				A2249ADE28AF48AD000AA6D9 /* Assets.xcassets */,
 				A2249AE328AF48AD000AA6D9 /* Info.plist */,
+				A2249AF528B0ED54000AA6D9 /* File.swift */,
 			);
 			path = MyLoginApp;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				A2249AF428AFCD1B000AA6D9 /* AdditionalInformationViewController.swift in Sources */,
 				A2249AF028AF9601000AA6D9 /* WelcomeViewController.swift in Sources */,
 				A2249AD628AF48AC000AA6D9 /* AppDelegate.swift in Sources */,
+				A2249AF628B0ED54000AA6D9 /* File.swift in Sources */,
 				A2249AEA28AF5A25000AA6D9 /* Person.swift in Sources */,
 				A2249AD828AF48AC000AA6D9 /* SceneDelegate.swift in Sources */,
 			);
@@ -335,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YG4RG79V23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyLoginApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -362,6 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YG4RG79V23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyLoginApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
